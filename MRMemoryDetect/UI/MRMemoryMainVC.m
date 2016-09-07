@@ -9,8 +9,7 @@
 #import "MRMemoryMainVC.h"
 #import "MRMemorySearchVC.h"
 #import "MRMemoryMainCell.h"
-
-static NSInteger const SwitchBarTag = 999;
+#import "MRWhiteListVC.h"
 
 @interface MRMemoryMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -54,7 +53,7 @@ static NSInteger const SwitchBarTag = 999;
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.hidden = YES;
+//    self.navigationController.navigationBar.hidden = YES;
 }
 
 #pragma mark - Public Method
@@ -67,6 +66,11 @@ static NSInteger const SwitchBarTag = 999;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 15;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -121,7 +125,6 @@ static NSInteger const SwitchBarTag = 999;
             cell.switchBtn.hidden = YES;
         }
             break;
-            break;
     }
     return cell;
 }
@@ -148,7 +151,8 @@ static NSInteger const SwitchBarTag = 999;
             break;
         case MRMemroyCellWhiteList:
         {
-            
+            MRWhiteListVC *whiteListVC = [[MRWhiteListVC alloc] init];
+            [self.navigationController pushViewController:whiteListVC animated:YES];
         }
             break;
         case MRMemroyCellBlackList:

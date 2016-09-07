@@ -10,4 +10,12 @@
 
 @implementation MRBlackListVC
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+    
+}
+
 @end

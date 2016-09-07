@@ -14,6 +14,8 @@
 
 @property (nonatomic, assign) BOOL enable;
 
+@property (nonatomic, copy) NSString *whiteListPrefix;
+
 + (instancetype)sharedInstance;
 
 - (void)addObject:(id)obj;
