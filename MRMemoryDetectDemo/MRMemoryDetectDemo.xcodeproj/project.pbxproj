@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603836FF1D7FC608007AA8E9 /* MRWhiteListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603836FE1D7FC608007AA8E9 /* MRWhiteListVC.m */; };
+		603837021D7FC61A007AA8E9 /* MRBlackListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603837011D7FC61A007AA8E9 /* MRBlackListVC.m */; };
+		603837051D7FC87D007AA8E9 /* MRMemoryMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 603837041D7FC87D007AA8E9 /* MRMemoryMainCell.m */; };
 		60D0086E1D7E9E4E007FEE58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D0086D1D7E9E4E007FEE58 /* main.m */; };
 		60D008711D7E9E4E007FEE58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D008701D7E9E4E007FEE58 /* AppDelegate.m */; };
 		60D008741D7E9E4E007FEE58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D008731D7E9E4E007FEE58 /* ViewController.m */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		603836FD1D7FC608007AA8E9 /* MRWhiteListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWhiteListVC.h; sourceTree = "<group>"; };
+		603836FE1D7FC608007AA8E9 /* MRWhiteListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWhiteListVC.m; sourceTree = "<group>"; };
+		603837001D7FC61A007AA8E9 /* MRBlackListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBlackListVC.h; sourceTree = "<group>"; };
+		603837011D7FC61A007AA8E9 /* MRBlackListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBlackListVC.m; sourceTree = "<group>"; };
+		603837031D7FC87D007AA8E9 /* MRMemoryMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMemoryMainCell.h; sourceTree = "<group>"; };
+		603837041D7FC87D007AA8E9 /* MRMemoryMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMemoryMainCell.m; sourceTree = "<group>"; };
 		60D008691D7E9E4E007FEE58 /* MRMemoryDetectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRMemoryDetectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D0086D1D7E9E4E007FEE58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60D0086F1D7E9E4E007FEE58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -176,6 +185,12 @@
 				60D008CF1D7FC48E007FEE58 /* MRMemoryObjectInfoVC.m */,
 				60D008D01D7FC48E007FEE58 /* MRMemorySearchVC.h */,
 				60D008D11D7FC48E007FEE58 /* MRMemorySearchVC.m */,
+				603836FD1D7FC608007AA8E9 /* MRWhiteListVC.h */,
+				603836FE1D7FC608007AA8E9 /* MRWhiteListVC.m */,
+				603837001D7FC61A007AA8E9 /* MRBlackListVC.h */,
+				603837011D7FC61A007AA8E9 /* MRBlackListVC.m */,
+				603837031D7FC87D007AA8E9 /* MRMemoryMainCell.h */,
+				603837041D7FC87D007AA8E9 /* MRMemoryMainCell.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -281,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60D008D61D7FC48E007FEE58 /* MRMemoryContainerView.m in Sources */,
+				603836FF1D7FC608007AA8E9 /* MRWhiteListVC.m in Sources */,
 				60D008D81D7FC48E007FEE58 /* MRMemoryMainVC.m in Sources */,
 				60D008D91D7FC48E007FEE58 /* MRMemoryNavigationController.m in Sources */,
 				60D008D21D7FC48E007FEE58 /* MRDeallocExecutor.m in Sources */,
@@ -289,8 +305,10 @@
 				60D008741D7E9E4E007FEE58 /* ViewController.m in Sources */,
 				60D008D51D7FC48E007FEE58 /* MRMemoryContainerVC.m in Sources */,
 				60D008711D7E9E4E007FEE58 /* AppDelegate.m in Sources */,
+				603837051D7FC87D007AA8E9 /* MRMemoryMainCell.m in Sources */,
 				60D008DB1D7FC48E007FEE58 /* MRMemorySearchVC.m in Sources */,
 				60D008D31D7FC48E007FEE58 /* MRMemoryDetect.m in Sources */,
+				603837021D7FC61A007AA8E9 /* MRBlackListVC.m in Sources */,
 				60D008D71D7FC48E007FEE58 /* MRMemoryDetectWindow.m in Sources */,
 				60D0086E1D7E9E4E007FEE58 /* main.m in Sources */,
 			);

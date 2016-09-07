@@ -8,6 +8,9 @@
 
 #import "MRMemoryMainVC.h"
 #import "MRMemorySearchVC.h"
+#import "MRMemoryMainCell.h"
+
+static NSInteger const SwitchBarTag = 999;
 
 @interface MRMemoryMainVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -68,39 +71,56 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    MRMemoryMainCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"UITableViewCell"];
+        cell = [[MRMemoryMainCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"MRMemoryMainCell"];
+        [cell.switchBtn addTarget:self action:@selector(switchBtnChanged:) forControlEvents:UIControlEventValueChanged];
     }
     switch ((MRMemroyCellType)indexPath.row) {
         case MRMemroyCellSearch:
         {
             cell.detailTextLabel.text = @"搜索";
+            cell.switchBtn.hidden = YES;
         }
             break;
         case MRMemroyCellFilter:
         {
             cell.detailTextLabel.text = @"筛选";
+            cell.switchBtn.hidden = YES;
         }
             break;
         case MRMemroyCellRecord:
         {
             cell.detailTextLabel.text = @"开始记录";
+            cell.switchBtn.hidden = NO;
+            cell.switchBtn.tag = MRMemroyCellRecord;
+            cell.switchBtn.selected = NO;
         }
             break;
         case MRMemroyCellWhiteList:
         {
             cell.detailTextLabel.text = @"白名单";
+            cell.switchBtn.hidden = NO;
+            cell.switchBtn.tag = MRMemroyCellWhiteList;
+            cell.switchBtn.selected = NO;
         }
             break;
         case MRMemroyCellBlackList:
         {
             cell.detailTextLabel.text = @"黑名单";
+            cell.switchBtn.hidden = NO;
+            cell.switchBtn.tag = MRMemroyCellBlackList;
+            cell.switchBtn.selected = NO;
         }
             break;
             
         default:
+        {
+            cell.detailTextLabel.text = @"";
+            cell.switchBtn.hidden = YES;
+        }
+            break;
             break;
     }
     return cell;
@@ -146,6 +166,29 @@
 - (void)back:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)switchBtnChanged:(UISwitch *)switchBtn
+{
+    switch (switchBtn.tag) {
+        case MRMemroyCellRecord:
+        {
+            
+        }
+            break;
+        case MRMemroyCellWhiteList:
+        {
+            
+        }
+            break;
+        case MRMemroyCellBlackList:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark - Setters & Getters
