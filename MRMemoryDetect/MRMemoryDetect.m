@@ -9,6 +9,7 @@
 #import "MRMemoryDetect.h"
 #import "NSObject+MRDealloc.h"
 #import "MRMemoryContainerVC.h"
+#import "FBAllocationTrackerManager.h"
 
 @interface MRMemoryDetect()
 {
@@ -54,45 +55,24 @@
     _memoryDetectWindow.rootViewController = [[MRMemoryNavigationController alloc] initWithRootViewController:_containerVC];
     _memoryDetectWindow.hidden = NO;
     
-    [NSObject swizzleInitMethod];
-}
-
-- (void)addObject:(id)obj
-{
-    if ([obj conformsToProtocol:NSProtocolFromString(@"NSObject")])
+    /**
+     *  本来以为自己能hook的，结果遇到 NSTaggedPointerStringCStringContainer retain的bug怎么也解决不了，最后google找到FBAllocationTracker能解决这个bug，发现这个其实就是做的和我想做的事情差不多，于是转而封装FBAllocationTracker
+     */
+//    [NSObject swizzleInitMethod];
+    
+    if (enable)
     {
-        [self addObjectDescription:[obj mr_objDescription]];
+        [[FBAllocationTrackerManager sharedManager] startTrackingAllocations];
+        [[FBAllocationTrackerManager sharedManager] enableGenerations];
     }
-}
-
-- (void)addObjectDescription:(NSString *)objDescription;
-{
-    if (objDescription && objDescription.length > 0)
+    else
     {
-        self.memoryObjDic[objDescription] = objDescription;
+        [[FBAllocationTrackerManager sharedManager] stopTrackingAllocations];
+        [[FBAllocationTrackerManager sharedManager] disableGenerations];
     }
+    
 }
 
-- (void)removeObject:(id)obj
-{
-    if ([obj conformsToProtocol:NSProtocolFromString(@"NSObject")])
-    {
-        [self removeObjectDescription:[obj mr_objDescription]];
-    }
-}
-
-- (void)removeObjectDescription:(NSString *)objDescription
-{
-    if (objDescription && objDescription.length > 0)
-    {
-        self.memoryObjDic[objDescription] = nil;
-    }
-}
-
-- (NSArray *)memoryObjArray
-{
-    return [self.memoryObjDic allKeys];
-}
 
 #pragma mark - Private Method
 
@@ -108,6 +88,17 @@
 
 
 #pragma mark - Setters & Getters
+
+- (NSArray *)lowPriorityPrefix
+{
+
+    return _lowPriorityPrefix ? _lowPriorityPrefix : @[@"CA",@"_",@"OS",@"CF"];
+}
+
+- (NSArray *)highPriorityPrefix
+{
+    return _highPriorityPrefix ? _highPriorityPrefix : @[@"NS",@"UI"];
+}
 
 
 @end

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBAllocationTrackerSummary.h"
 
 @interface MRMemoryObjectInfoVC : UIViewController
 
-@property (nonatomic, copy) NSString *objectInfo;
+@property (nonatomic, strong) FBAllocationTrackerSummary *objectInfo;
 
 @end

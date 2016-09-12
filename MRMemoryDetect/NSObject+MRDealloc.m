@@ -33,9 +33,9 @@ const void *MRDeallocBlockKey = &MRDeallocBlockKey;
     
     if (![self isKindOfClass:[MRDeallocExecutor class]])
     {
-        [[MRMemoryDetect sharedInstance] addObject:obj];
+//        [[MRMemoryDetect sharedInstance] addObject:obj];
         [obj mr_deallocExecute:^(NSString *objDescription) {
-            [[MRMemoryDetect sharedInstance] removeObjectDescription:objDescription];
+//            [[MRMemoryDetect sharedInstance] removeObjectDescription:objDescription];
         }];
     }
     return obj;

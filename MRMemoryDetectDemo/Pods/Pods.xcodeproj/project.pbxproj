@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D809491B653AEC2D98D130ED11BEEB /* FBAllocationTrackerGeneration.h in Headers */ = {isa = PBXBuildFile; fileRef = 88942834339E80FCB24B3FFD00E91525 /* FBAllocationTrackerGeneration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36BFC7E736BCA8233A4004AFC712153A /* FBAllocationTrackerSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7AE472F3EB23FD7C7A20C83DD38F39 /* FBAllocationTrackerSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39D85960C17DC7F8605F1FF9BC485D30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3C7EBC0661A3D5EC003D315179C1F139 /* FBAllocationTrackerNSZombieSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E86128A1FF7CDED409835E31A993A73E /* FBAllocationTrackerNSZombieSupport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4CC110CEA5DD89210433C11EEB3EA828 /* FBAllocationTrackerFunctors.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F41F7E0C20DFAD8146951BA855C061 /* FBAllocationTrackerFunctors.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5461F0CFA17781A74966A3129CB1D12A /* FBAllocationTrackerGeneration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7DC865237A5EDAFCDE298C0982289DD8 /* FBAllocationTrackerGeneration.mm */; };
+		588E3625AC8D068DB659B06AFCC50494 /* FBAllocationTrackerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 069B7FAABA5E0E5D946BC5C5DF1F9DE2 /* FBAllocationTrackerManager.mm */; };
+		6208247720506002F6481FE29EBB7647 /* FBAllocationTrackerDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFE8037546AE238B0D2DF7E5651AF76 /* FBAllocationTrackerDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E6E87A7E5A4EC78DA016EF5F7000E5 /* FBAllocationTrackerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 767CE0D2749B81B7EC3E713FE2418CF0 /* FBAllocationTrackerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66EA379C1AD2090B157E57D9A17C705C /* FBAllocationTrackerGenerationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9024BAFC464856ACDDA0DB0E501AD /* FBAllocationTrackerGenerationManager.mm */; };
+		6A8E576701FF3523A6AEF1D19428B481 /* FBAllocationTrackerNSZombieSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8BFBE4478C45E0D7DEA3D3FEA8860DF /* FBAllocationTrackerNSZombieSupport.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6C5A6186A6B2B88FB840C2EB6B52025C /* NSObject+FBAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1EA65C30834205B04B49A1A0D185AB /* NSObject+FBAllocationTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71742AEF20E39C14BAFB479128B762C3 /* FBAllocationTrackerHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 520FD0610750E93E3823BAAD53690E37 /* FBAllocationTrackerHelpers.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		72747C28678E2FA667F0C575732455A2 /* FBAllocationTrackerSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE20586E081713BA08DD450ECA5558C /* FBAllocationTrackerSummary.m */; };
+		7CDEC61FF5ECA82E951E39DB2EA9BEF1 /* FBAllocationTrackerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC41D7386F4F576E3708ED289D88E270 /* FBAllocationTrackerImpl.mm */; };
+		819B1B25FAF4FB72690EF323682581F1 /* NSObject+FBAllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2F786219D3733245E7840237A8C4356 /* NSObject+FBAllocationTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		889EB82162DF2E4E07FB326C99AE444D /* FBAllocationTrackerGenerationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 402E4E3EE8509D05E02E7E102BFE8F28 /* FBAllocationTrackerGenerationManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD4DD18ED42107A84CD0824E6C319D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B8F06F4A09FFB28E9C7D90B54007AC53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E0F9F4F986BCABE4BC0BAE5DFA357CDA /* Pods-MRMemoryDetectDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A73146D79128324901DC6926D0CAA203 /* Pods-MRMemoryDetectDemo-dummy.m */; };
+		E1AFC7BBF195634DCC57362B61490DF6 /* Pods-MRMemoryDetectDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9180337EF0F4B644861938EEB20800E /* Pods-MRMemoryDetectDemoTests-dummy.m */; };
+		E77DB9CB77E896A2B2A8EBFC5F7A7726 /* FBAllocationTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A25659EC60CE65D21326FCCFD9B60855 /* FBAllocationTracker-dummy.m */; };
+		E890B6532DE06B762D5FBBE65CC96658 /* FBAllocationTrackerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7A03F12EB87289F8AD88EBB5FA5484 /* FBAllocationTrackerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F290D9B4A7404933D4956C60893577B4 /* FBAllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E718D50D5EBD4373DC75A3B72E95F865 /* FBAllocationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C383F660732A69EFD24E681ADFD37516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A0DF836BAB98D7819952604EA22C47E;
+			remoteInfo = FBAllocationTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		016AEF2589BDA6C5C6DA5A290248A78A /* Pods-MRMemoryDetectDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRMemoryDetectDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		069B7FAABA5E0E5D946BC5C5DF1F9DE2 /* FBAllocationTrackerManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAllocationTrackerManager.mm; path = FBAllocationTracker/FBAllocationTrackerManager.mm; sourceTree = "<group>"; };
+		12F41F7E0C20DFAD8146951BA855C061 /* FBAllocationTrackerFunctors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerFunctors.h; path = FBAllocationTracker/FBAllocationTrackerFunctors.h; sourceTree = "<group>"; };
+		1487FBF2F05B96A99447AFAEC5500CFD /* Pods-MRMemoryDetectDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRMemoryDetectDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1B850DF14E15868045B086882632E9BC /* Pods-MRMemoryDetectDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRMemoryDetectDemo-frameworks.sh"; sourceTree = "<group>"; };
+		1E7AE472F3EB23FD7C7A20C83DD38F39 /* FBAllocationTrackerSummary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerSummary.h; path = FBAllocationTracker/FBAllocationTrackerSummary.h; sourceTree = "<group>"; };
+		24E7B02CC9F485EEBA86A2E49047C14C /* Pods-MRMemoryDetectDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRMemoryDetectDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2ED955B6A3AC5A3208E4E641166F8BCD /* Pods-MRMemoryDetectDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRMemoryDetectDemoTests-resources.sh"; sourceTree = "<group>"; };
+		36579D54B09B5CEED70CFAD74BE49461 /* Pods-MRMemoryDetectDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRMemoryDetectDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C7A03F12EB87289F8AD88EBB5FA5484 /* FBAllocationTrackerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerManager.h; path = FBAllocationTracker/FBAllocationTrackerManager.h; sourceTree = "<group>"; };
+		3E07C97C49534A82273B3C3C541A2E75 /* libFBAllocationTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBAllocationTracker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEC7955DF4953F2070AB5A46D0A9B48 /* libPods-MRMemoryDetectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRMemoryDetectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		402E4E3EE8509D05E02E7E102BFE8F28 /* FBAllocationTrackerGenerationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerGenerationManager.h; path = FBAllocationTracker/Generations/FBAllocationTrackerGenerationManager.h; sourceTree = "<group>"; };
+		4F23697DF1E5BBD80AF8DE443DC3D7CB /* FBAllocationTracker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBAllocationTracker-prefix.pch"; sourceTree = "<group>"; };
+		520FD0610750E93E3823BAAD53690E37 /* FBAllocationTrackerHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerHelpers.h; path = FBAllocationTracker/FBAllocationTrackerHelpers.h; sourceTree = "<group>"; };
+		5CE20586E081713BA08DD450ECA5558C /* FBAllocationTrackerSummary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBAllocationTrackerSummary.m; path = FBAllocationTracker/FBAllocationTrackerSummary.m; sourceTree = "<group>"; };
+		767CE0D2749B81B7EC3E713FE2418CF0 /* FBAllocationTrackerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerImpl.h; path = FBAllocationTracker/FBAllocationTrackerImpl.h; sourceTree = "<group>"; };
+		7A1EA65C30834205B04B49A1A0D185AB /* NSObject+FBAllocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBAllocationTracker.h"; path = "FBAllocationTracker/NSObject+FBAllocationTracker.h"; sourceTree = "<group>"; };
+		7C3B61EBC5A234488BC3F499C061435C /* Pods-MRMemoryDetectDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRMemoryDetectDemo-resources.sh"; sourceTree = "<group>"; };
+		7C8A282A29BCE71692E64952158A26CA /* FBAllocationTracker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBAllocationTracker.xcconfig; sourceTree = "<group>"; };
+		7DC865237A5EDAFCDE298C0982289DD8 /* FBAllocationTrackerGeneration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAllocationTrackerGeneration.mm; path = FBAllocationTracker/Generations/FBAllocationTrackerGeneration.mm; sourceTree = "<group>"; };
+		88942834339E80FCB24B3FFD00E91525 /* FBAllocationTrackerGeneration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerGeneration.h; path = FBAllocationTracker/Generations/FBAllocationTrackerGeneration.h; sourceTree = "<group>"; };
+		8FB9024BAFC464856ACDDA0DB0E501AD /* FBAllocationTrackerGenerationManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAllocationTrackerGenerationManager.mm; path = FBAllocationTracker/Generations/FBAllocationTrackerGenerationManager.mm; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A25659EC60CE65D21326FCCFD9B60855 /* FBAllocationTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBAllocationTracker-dummy.m"; sourceTree = "<group>"; };
+		A73146D79128324901DC6926D0CAA203 /* Pods-MRMemoryDetectDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRMemoryDetectDemo-dummy.m"; sourceTree = "<group>"; };
+		B3FAFEE5499E1230395A2DF883D35CD9 /* Pods-MRMemoryDetectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRMemoryDetectDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BAD5BF4E57A89D89A59B2035DC171A37 /* Pods-MRMemoryDetectDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRMemoryDetectDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D47710A8E826B033FECE54BFFD952094 /* libPods-MRMemoryDetectDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRMemoryDetectDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A1853F36FD2E072C8840506C249528 /* Pods-MRMemoryDetectDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRMemoryDetectDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D95DFEB1B28D661B8464A6993878F293 /* Pods-MRMemoryDetectDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRMemoryDetectDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		DBFE8037546AE238B0D2DF7E5651AF76 /* FBAllocationTrackerDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerDefines.h; path = FBAllocationTracker/FBAllocationTrackerDefines.h; sourceTree = "<group>"; };
+		E2F786219D3733245E7840237A8C4356 /* NSObject+FBAllocationTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSObject+FBAllocationTracker.mm"; path = "FBAllocationTracker/NSObject+FBAllocationTracker.mm"; sourceTree = "<group>"; };
+		E718D50D5EBD4373DC75A3B72E95F865 /* FBAllocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTracker.h; path = FBAllocationTracker/FBAllocationTracker.h; sourceTree = "<group>"; };
+		E86128A1FF7CDED409835E31A993A73E /* FBAllocationTrackerNSZombieSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBAllocationTrackerNSZombieSupport.h; path = FBAllocationTracker/Generations/FBAllocationTrackerNSZombieSupport.h; sourceTree = "<group>"; };
+		E8BFBE4478C45E0D7DEA3D3FEA8860DF /* FBAllocationTrackerNSZombieSupport.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAllocationTrackerNSZombieSupport.mm; path = FBAllocationTracker/Generations/FBAllocationTrackerNSZombieSupport.mm; sourceTree = "<group>"; };
+		E9180337EF0F4B644861938EEB20800E /* Pods-MRMemoryDetectDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRMemoryDetectDemoTests-dummy.m"; sourceTree = "<group>"; };
+		F61CA92DBABC977451703E9285F5DD3B /* Pods-MRMemoryDetectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRMemoryDetectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC41D7386F4F576E3708ED289D88E270 /* FBAllocationTrackerImpl.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = FBAllocationTrackerImpl.mm; path = FBAllocationTracker/FBAllocationTrackerImpl.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6AF896B3C90FBFE149DCB547958F927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F06F4A09FFB28E9C7D90B54007AC53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA22D54174502D0E45D7A86A50C7D202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4DD18ED42107A84CD0824E6C319D36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3863CBAB6DBE51157205C481B399C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39D85960C17DC7F8605F1FF9BC485D30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA463541C75AFB6B09C849B3B42CA11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E07C97C49534A82273B3C3C541A2E75 /* libFBAllocationTracker.a */,
+				3FEC7955DF4953F2070AB5A46D0A9B48 /* libPods-MRMemoryDetectDemo.a */,
+				D47710A8E826B033FECE54BFFD952094 /* libPods-MRMemoryDetectDemoTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28B0381AB0931896BACE8E678F510096 /* FBAllocationTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E718D50D5EBD4373DC75A3B72E95F865 /* FBAllocationTracker.h */,
+				DBFE8037546AE238B0D2DF7E5651AF76 /* FBAllocationTrackerDefines.h */,
+				12F41F7E0C20DFAD8146951BA855C061 /* FBAllocationTrackerFunctors.h */,
+				88942834339E80FCB24B3FFD00E91525 /* FBAllocationTrackerGeneration.h */,
+				7DC865237A5EDAFCDE298C0982289DD8 /* FBAllocationTrackerGeneration.mm */,
+				402E4E3EE8509D05E02E7E102BFE8F28 /* FBAllocationTrackerGenerationManager.h */,
+				8FB9024BAFC464856ACDDA0DB0E501AD /* FBAllocationTrackerGenerationManager.mm */,
+				520FD0610750E93E3823BAAD53690E37 /* FBAllocationTrackerHelpers.h */,
+				767CE0D2749B81B7EC3E713FE2418CF0 /* FBAllocationTrackerImpl.h */,
+				FC41D7386F4F576E3708ED289D88E270 /* FBAllocationTrackerImpl.mm */,
+				3C7A03F12EB87289F8AD88EBB5FA5484 /* FBAllocationTrackerManager.h */,
+				069B7FAABA5E0E5D946BC5C5DF1F9DE2 /* FBAllocationTrackerManager.mm */,
+				E86128A1FF7CDED409835E31A993A73E /* FBAllocationTrackerNSZombieSupport.h */,
+				E8BFBE4478C45E0D7DEA3D3FEA8860DF /* FBAllocationTrackerNSZombieSupport.mm */,
+				1E7AE472F3EB23FD7C7A20C83DD38F39 /* FBAllocationTrackerSummary.h */,
+				5CE20586E081713BA08DD450ECA5558C /* FBAllocationTrackerSummary.m */,
+				7A1EA65C30834205B04B49A1A0D185AB /* NSObject+FBAllocationTracker.h */,
+				E2F786219D3733245E7840237A8C4356 /* NSObject+FBAllocationTracker.mm */,
+				29481CFF136B3EB7DF7916253FF808F3 /* Support Files */,
+			);
+			path = FBAllocationTracker;
+			sourceTree = "<group>";
+		};
+		29481CFF136B3EB7DF7916253FF808F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C8A282A29BCE71692E64952158A26CA /* FBAllocationTracker.xcconfig */,
+				A25659EC60CE65D21326FCCFD9B60855 /* FBAllocationTracker-dummy.m */,
+				4F23697DF1E5BBD80AF8DE443DC3D7CB /* FBAllocationTracker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBAllocationTracker";
+			sourceTree = "<group>";
+		};
+		356CAA06A803B8B3EF65C48BE07966D9 /* Pods-MRMemoryDetectDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				36579D54B09B5CEED70CFAD74BE49461 /* Pods-MRMemoryDetectDemoTests-acknowledgements.markdown */,
+				24E7B02CC9F485EEBA86A2E49047C14C /* Pods-MRMemoryDetectDemoTests-acknowledgements.plist */,
+				E9180337EF0F4B644861938EEB20800E /* Pods-MRMemoryDetectDemoTests-dummy.m */,
+				016AEF2589BDA6C5C6DA5A290248A78A /* Pods-MRMemoryDetectDemoTests-frameworks.sh */,
+				2ED955B6A3AC5A3208E4E641166F8BCD /* Pods-MRMemoryDetectDemoTests-resources.sh */,
+				D8A1853F36FD2E072C8840506C249528 /* Pods-MRMemoryDetectDemoTests.debug.xcconfig */,
+				BAD5BF4E57A89D89A59B2035DC171A37 /* Pods-MRMemoryDetectDemoTests.release.xcconfig */,
+			);
+			name = "Pods-MRMemoryDetectDemoTests";
+			path = "Target Support Files/Pods-MRMemoryDetectDemoTests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3F9763805D995CE561D07397FB0B6AB6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84FF84B4ED05CE01FAB2F31F9E58D879 /* Pods-MRMemoryDetectDemo */,
+				356CAA06A803B8B3EF65C48BE07966D9 /* Pods-MRMemoryDetectDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		426653D1AEADC5F921C5FD6BD84BB5D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28B0381AB0931896BACE8E678F510096 /* FBAllocationTracker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				426653D1AEADC5F921C5FD6BD84BB5D2 /* Pods */,
+				1BA463541C75AFB6B09C849B3B42CA11 /* Products */,
+				3F9763805D995CE561D07397FB0B6AB6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84FF84B4ED05CE01FAB2F31F9E58D879 /* Pods-MRMemoryDetectDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1487FBF2F05B96A99447AFAEC5500CFD /* Pods-MRMemoryDetectDemo-acknowledgements.markdown */,
+				D95DFEB1B28D661B8464A6993878F293 /* Pods-MRMemoryDetectDemo-acknowledgements.plist */,
+				A73146D79128324901DC6926D0CAA203 /* Pods-MRMemoryDetectDemo-dummy.m */,
+				1B850DF14E15868045B086882632E9BC /* Pods-MRMemoryDetectDemo-frameworks.sh */,
+				7C3B61EBC5A234488BC3F499C061435C /* Pods-MRMemoryDetectDemo-resources.sh */,
+				F61CA92DBABC977451703E9285F5DD3B /* Pods-MRMemoryDetectDemo.debug.xcconfig */,
+				B3FAFEE5499E1230395A2DF883D35CD9 /* Pods-MRMemoryDetectDemo.release.xcconfig */,
+			);
+			name = "Pods-MRMemoryDetectDemo";
+			path = "Target Support Files/Pods-MRMemoryDetectDemo";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A32868AC303C3F58C7E10D6F856B6E46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290D9B4A7404933D4956C60893577B4 /* FBAllocationTracker.h in Headers */,
+				6208247720506002F6481FE29EBB7647 /* FBAllocationTrackerDefines.h in Headers */,
+				4CC110CEA5DD89210433C11EEB3EA828 /* FBAllocationTrackerFunctors.h in Headers */,
+				04D809491B653AEC2D98D130ED11BEEB /* FBAllocationTrackerGeneration.h in Headers */,
+				889EB82162DF2E4E07FB326C99AE444D /* FBAllocationTrackerGenerationManager.h in Headers */,
+				71742AEF20E39C14BAFB479128B762C3 /* FBAllocationTrackerHelpers.h in Headers */,
+				63E6E87A7E5A4EC78DA016EF5F7000E5 /* FBAllocationTrackerImpl.h in Headers */,
+				E890B6532DE06B762D5FBBE65CC96658 /* FBAllocationTrackerManager.h in Headers */,
+				3C7EBC0661A3D5EC003D315179C1F139 /* FBAllocationTrackerNSZombieSupport.h in Headers */,
+				36BFC7E736BCA8233A4004AFC712153A /* FBAllocationTrackerSummary.h in Headers */,
+				6C5A6186A6B2B88FB840C2EB6B52025C /* NSObject+FBAllocationTracker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A0DF836BAB98D7819952604EA22C47E /* FBAllocationTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179CF0FDE19D418A643646D7ECD893E9 /* Build configuration list for PBXNativeTarget "FBAllocationTracker" */;
+			buildPhases = (
+				2E9DAADD7083E40C37415EB979769B4E /* Sources */,
+				BA22D54174502D0E45D7A86A50C7D202 /* Frameworks */,
+				A32868AC303C3F58C7E10D6F856B6E46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBAllocationTracker;
+			productName = FBAllocationTracker;
+			productReference = 3E07C97C49534A82273B3C3C541A2E75 /* libFBAllocationTracker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6C782EE228EF1B16AB553C8263D72205 /* Pods-MRMemoryDetectDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6040DE5D26C8F886AC522E5AAEB50716 /* Build configuration list for PBXNativeTarget "Pods-MRMemoryDetectDemoTests" */;
+			buildPhases = (
+				0854612FFC55BAE07436BDE4D0E5B4C4 /* Sources */,
+				E3863CBAB6DBE51157205C481B399C1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MRMemoryDetectDemoTests";
+			productName = "Pods-MRMemoryDetectDemoTests";
+			productReference = D47710A8E826B033FECE54BFFD952094 /* libPods-MRMemoryDetectDemoTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BE73A7557FD34D46C4FF3F249532040D /* Pods-MRMemoryDetectDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84096913079CB059B8E3072AF038C910 /* Build configuration list for PBXNativeTarget "Pods-MRMemoryDetectDemo" */;
+			buildPhases = (
+				C2E4B88591919EB53CB98832C30A98A6 /* Sources */,
+				A6AF896B3C90FBFE149DCB547958F927 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				931775122B7054B59D475B9995F81F65 /* PBXTargetDependency */,
+			);
+			name = "Pods-MRMemoryDetectDemo";
+			productName = "Pods-MRMemoryDetectDemo";
+			productReference = 3FEC7955DF4953F2070AB5A46D0A9B48 /* libPods-MRMemoryDetectDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1BA463541C75AFB6B09C849B3B42CA11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A0DF836BAB98D7819952604EA22C47E /* FBAllocationTracker */,
+				BE73A7557FD34D46C4FF3F249532040D /* Pods-MRMemoryDetectDemo */,
+				6C782EE228EF1B16AB553C8263D72205 /* Pods-MRMemoryDetectDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0854612FFC55BAE07436BDE4D0E5B4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AFC7BBF195634DCC57362B61490DF6 /* Pods-MRMemoryDetectDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E9DAADD7083E40C37415EB979769B4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77DB9CB77E896A2B2A8EBFC5F7A7726 /* FBAllocationTracker-dummy.m in Sources */,
+				5461F0CFA17781A74966A3129CB1D12A /* FBAllocationTrackerGeneration.mm in Sources */,
+				66EA379C1AD2090B157E57D9A17C705C /* FBAllocationTrackerGenerationManager.mm in Sources */,
+				7CDEC61FF5ECA82E951E39DB2EA9BEF1 /* FBAllocationTrackerImpl.mm in Sources */,
+				588E3625AC8D068DB659B06AFCC50494 /* FBAllocationTrackerManager.mm in Sources */,
+				6A8E576701FF3523A6AEF1D19428B481 /* FBAllocationTrackerNSZombieSupport.mm in Sources */,
+				72747C28678E2FA667F0C575732455A2 /* FBAllocationTrackerSummary.m in Sources */,
+				819B1B25FAF4FB72690EF323682581F1 /* NSObject+FBAllocationTracker.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E4B88591919EB53CB98832C30A98A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F9F4F986BCABE4BC0BAE5DFA357CDA /* Pods-MRMemoryDetectDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		931775122B7054B59D475B9995F81F65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBAllocationTracker;
+			target = 5A0DF836BAB98D7819952604EA22C47E /* FBAllocationTracker */;
+			targetProxy = C383F660732A69EFD24E681ADFD37516 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21CA62285CEED9F61E8E8B63BC6BAC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8A282A29BCE71692E64952158A26CA /* FBAllocationTracker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBAllocationTracker/FBAllocationTracker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3EEB05637D12C1AB91E8E236DB408EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8A282A29BCE71692E64952158A26CA /* FBAllocationTracker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBAllocationTracker/FBAllocationTracker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		791449D982771A4F4D0141B33610A5A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3FAFEE5499E1230395A2DF883D35CD9 /* Pods-MRMemoryDetectDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7D2625C92B7477C549EA49A9DCEEAB6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD5BF4E57A89D89A59B2035DC171A37 /* Pods-MRMemoryDetectDemoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDFA8E4053825D1ADCBA659A5F3735FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A1853F36FD2E072C8840506C249528 /* Pods-MRMemoryDetectDemoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E79A1BBB169D75DEFC1360767CF3945F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61CA92DBABC977451703E9285F5DD3B /* Pods-MRMemoryDetectDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		179CF0FDE19D418A643646D7ECD893E9 /* Build configuration list for PBXNativeTarget "FBAllocationTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CA62285CEED9F61E8E8B63BC6BAC28 /* Debug */,
+				3EEB05637D12C1AB91E8E236DB408EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6040DE5D26C8F886AC522E5AAEB50716 /* Build configuration list for PBXNativeTarget "Pods-MRMemoryDetectDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFA8E4053825D1ADCBA659A5F3735FD /* Debug */,
+				7D2625C92B7477C549EA49A9DCEEAB6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84096913079CB059B8E3072AF038C910 /* Build configuration list for PBXNativeTarget "Pods-MRMemoryDetectDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79A1BBB169D75DEFC1360767CF3945F /* Debug */,
+				791449D982771A4F4D0141B33610A5A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

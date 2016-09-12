@@ -16,14 +16,9 @@
 
 @property (nonatomic, copy) NSString *whiteListPrefix;
 
+@property (nonatomic, strong) NSArray *lowPriorityPrefix;
+@property (nonatomic, strong) NSArray *highPriorityPrefix;
+
 + (instancetype)sharedInstance;
-
-- (void)addObject:(id)obj;
-- (void)addObjectDescription:(NSString *)objDescription;
-
-- (void)removeObject:(id)obj;
-- (void)removeObjectDescription:(NSString *)objDescription;
-
-- (NSArray *)memoryObjArray;
 
 @end

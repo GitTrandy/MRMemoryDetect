@@ -27,6 +27,8 @@
 		60D008D91D7FC48E007FEE58 /* MRMemoryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D008CD1D7FC48E007FEE58 /* MRMemoryNavigationController.m */; };
 		60D008DA1D7FC48E007FEE58 /* MRMemoryObjectInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D008CF1D7FC48E007FEE58 /* MRMemoryObjectInfoVC.m */; };
 		60D008DB1D7FC48E007FEE58 /* MRMemorySearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D008D11D7FC48E007FEE58 /* MRMemorySearchVC.m */; };
+		7BBA17B32211131DE069BE4F /* libPods-MRMemoryDetectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F146C6CB14B706022D2380A /* libPods-MRMemoryDetectDemo.a */; };
+		95B56BA72EA2C371EF5816B1 /* libPods-MRMemoryDetectDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 894E0F446EAC955483EBAB2C /* libPods-MRMemoryDetectDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F146C6CB14B706022D2380A /* libPods-MRMemoryDetectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRMemoryDetectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		603836FD1D7FC608007AA8E9 /* MRWhiteListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRWhiteListVC.h; sourceTree = "<group>"; };
 		603836FE1D7FC608007AA8E9 /* MRWhiteListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRWhiteListVC.m; sourceTree = "<group>"; };
 		603837001D7FC61A007AA8E9 /* MRBlackListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRBlackListVC.h; sourceTree = "<group>"; };
@@ -80,6 +83,11 @@
 		60D008CF1D7FC48E007FEE58 /* MRMemoryObjectInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMemoryObjectInfoVC.m; sourceTree = "<group>"; };
 		60D008D01D7FC48E007FEE58 /* MRMemorySearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRMemorySearchVC.h; sourceTree = "<group>"; };
 		60D008D11D7FC48E007FEE58 /* MRMemorySearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRMemorySearchVC.m; sourceTree = "<group>"; };
+		894E0F446EAC955483EBAB2C /* libPods-MRMemoryDetectDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRMemoryDetectDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D9EB47970422D59E4BBC72 /* Pods-MRMemoryDetectDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRMemoryDetectDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRMemoryDetectDemoTests/Pods-MRMemoryDetectDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E67BFB6A220D9E791AAA78CA /* Pods-MRMemoryDetectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRMemoryDetectDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRMemoryDetectDemo/Pods-MRMemoryDetectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E9568D804EDAFCE22DA9A46A /* Pods-MRMemoryDetectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRMemoryDetectDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRMemoryDetectDemo/Pods-MRMemoryDetectDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F2C14AC0AB3C2F09B885366A /* Pods-MRMemoryDetectDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRMemoryDetectDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRMemoryDetectDemoTests/Pods-MRMemoryDetectDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BBA17B32211131DE069BE4F /* libPods-MRMemoryDetectDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B56BA72EA2C371EF5816B1 /* libPods-MRMemoryDetectDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +117,8 @@
 				60D0086B1D7E9E4E007FEE58 /* MRMemoryDetectDemo */,
 				60D008851D7E9E4E007FEE58 /* MRMemoryDetectDemoTests */,
 				60D0086A1D7E9E4E007FEE58 /* Products */,
+				AD9C3DC858993669AE1BB67D /* Pods */,
+				FE4727D7F39F82AE02AB93F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +207,26 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		AD9C3DC858993669AE1BB67D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E67BFB6A220D9E791AAA78CA /* Pods-MRMemoryDetectDemo.debug.xcconfig */,
+				E9568D804EDAFCE22DA9A46A /* Pods-MRMemoryDetectDemo.release.xcconfig */,
+				F2C14AC0AB3C2F09B885366A /* Pods-MRMemoryDetectDemoTests.debug.xcconfig */,
+				94D9EB47970422D59E4BBC72 /* Pods-MRMemoryDetectDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE4727D7F39F82AE02AB93F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F146C6CB14B706022D2380A /* libPods-MRMemoryDetectDemo.a */,
+				894E0F446EAC955483EBAB2C /* libPods-MRMemoryDetectDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60D0088B1D7E9E4E007FEE58 /* Build configuration list for PBXNativeTarget "MRMemoryDetectDemo" */;
 			buildPhases = (
+				4FFFCADBC1A58C3AE01BDF0A /* 📦 Check Pods Manifest.lock */,
 				60D008651D7E9E4E007FEE58 /* Sources */,
 				60D008661D7E9E4E007FEE58 /* Frameworks */,
 				60D008671D7E9E4E007FEE58 /* Resources */,
+				A4AD3964F13573BFD9F1604E /* 📦 Embed Pods Frameworks */,
+				686579C54F2780758D59FBB3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60D0088E1D7E9E4E007FEE58 /* Build configuration list for PBXNativeTarget "MRMemoryDetectDemoTests" */;
 			buildPhases = (
+				DA651687721670D1E937E1A4 /* 📦 Check Pods Manifest.lock */,
 				60D0087E1D7E9E4E007FEE58 /* Sources */,
 				60D0087F1D7E9E4E007FEE58 /* Frameworks */,
 				60D008801D7E9E4E007FEE58 /* Resources */,
+				9DD5CAFF18159016A47791EC /* 📦 Embed Pods Frameworks */,
+				CE04E2455B0002750FB62C74 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,6 +327,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FFFCADBC1A58C3AE01BDF0A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		686579C54F2780758D59FBB3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRMemoryDetectDemo/Pods-MRMemoryDetectDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD5CAFF18159016A47791EC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRMemoryDetectDemoTests/Pods-MRMemoryDetectDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4AD3964F13573BFD9F1604E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRMemoryDetectDemo/Pods-MRMemoryDetectDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE04E2455B0002750FB62C74 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRMemoryDetectDemoTests/Pods-MRMemoryDetectDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA651687721670D1E937E1A4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		60D008651D7E9E4E007FEE58 /* Sources */ = {
@@ -438,6 +569,7 @@
 		};
 		60D0088C1D7E9E4E007FEE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67BFB6A220D9E791AAA78CA /* Pods-MRMemoryDetectDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MRMemoryDetectDemo/Info.plist;
@@ -450,6 +582,7 @@
 		};
 		60D0088D1D7E9E4E007FEE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9568D804EDAFCE22DA9A46A /* Pods-MRMemoryDetectDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MRMemoryDetectDemo/Info.plist;
@@ -462,6 +595,7 @@
 		};
 		60D0088F1D7E9E4E007FEE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C14AC0AB3C2F09B885366A /* Pods-MRMemoryDetectDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MRMemoryDetectDemoTests/Info.plist;
@@ -474,6 +608,7 @@
 		};
 		60D008901D7E9E4E007FEE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D9EB47970422D59E4BBC72 /* Pods-MRMemoryDetectDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MRMemoryDetectDemoTests/Info.plist;

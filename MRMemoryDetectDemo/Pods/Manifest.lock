@@ -1,0 +1,12 @@
+PODS:
+  - FBAllocationTracker (0.1.5)
+
+DEPENDENCIES:
+  - FBAllocationTracker (~> 0.1.5)
+
+SPEC CHECKSUMS:
+  FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
+
+PODFILE CHECKSUM: 8b8808b4a908edfc0a501c57482d2d12f61522df
+
+COCOAPODS: 1.0.0
